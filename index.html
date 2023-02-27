@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>Calculadora</h1>
+	<div class="container">
+		<input type="text" id="input-numeros" placeholder="0" readonly>
+		<div class="buttons-container">
+			<button onclick="inserirNumero('7')">7</button>
+			<button onclick="inserirNumero('8')">8</button>
+			<button onclick="inserirNumero('9')">9</button>
+			<button onclick="selecionarOperacao('divisao')">÷</button>
+			<button onclick="inserirNumero('4')">4</button>
+			<button onclick="inserirNumero('5')">5</button>
+			<button onclick="inserirNumero('6')">6</button>
+			<button onclick="selecionarOperacao('multiplicacao')">x</button>
+			<button onclick="inserirNumero('1')">1</button>
+			<button onclick="inserirNumero('2')">2</button>
+			<button onclick="inserirNumero('3')">3</button>
+			<button onclick="selecionarOperacao('subtracao')">-</button>
+			<button onclick="inserirNumero('0')">0</button>
+			<button onclick="inserirNumero('.')">.</button>
+			<button onclick="calcular()">=</button>
+			<button onclick="selecionarOperacao('soma')">+</button>
+		</div>
+		<input type="text" id="resultado" placeholder="0" readonly>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
